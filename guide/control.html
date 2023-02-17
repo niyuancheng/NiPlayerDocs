@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>组件 | NiPlayer</title>
+    <meta name="generator" content="VuePress 1.9.8">
+    
+    <meta name="description" content="一款开箱即用的H5流媒体播放器">
+    
+    <link rel="preload" href="/assets/css/0.styles.104e83c9.css" as="style"><link rel="preload" href="/assets/js/app.972e7c2f.js" as="script"><link rel="preload" href="/assets/js/2.0f6b4283.js" as="script"><link rel="preload" href="/assets/js/16.18e2fc4d.js" as="script"><link rel="prefetch" href="/assets/js/10.b6a2a3d0.js"><link rel="prefetch" href="/assets/js/11.919dba2a.js"><link rel="prefetch" href="/assets/js/12.01c0bc7f.js"><link rel="prefetch" href="/assets/js/13.0341b0d1.js"><link rel="prefetch" href="/assets/js/14.9ce325a5.js"><link rel="prefetch" href="/assets/js/15.2824b0e6.js"><link rel="prefetch" href="/assets/js/17.617888d6.js"><link rel="prefetch" href="/assets/js/18.4e4afa8a.js"><link rel="prefetch" href="/assets/js/19.ffd2b922.js"><link rel="prefetch" href="/assets/js/20.9c6a174a.js"><link rel="prefetch" href="/assets/js/3.af2b0999.js"><link rel="prefetch" href="/assets/js/4.60929a0f.js"><link rel="prefetch" href="/assets/js/5.3716ec79.js"><link rel="prefetch" href="/assets/js/6.98e45452.js"><link rel="prefetch" href="/assets/js/7.3813ffbf.js"><link rel="prefetch" href="/assets/js/8.12968961.js"><link rel="prefetch" href="/assets/js/9.5000fd15.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.104e83c9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/NiPlayer.svg" alt="NiPlayer" class="logo"> <span class="site-name can-hide">NiPlayer</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="/env/" class="nav-link">
+  生态
+</a></div><div class="nav-item"><a href="/api/" class="nav-link">
+  API
+</a></div><div class="nav-item"><a href="https://github.com/niyuancheng/NiPlayer" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">
+  指南
+</a></div><div class="nav-item"><a href="/env/" class="nav-link">
+  生态
+</a></div><div class="nav-item"><a href="/api/" class="nav-link">
+  API
+</a></div><div class="nav-item"><a href="https://github.com/niyuancheng/NiPlayer" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/guide/install.html" class="sidebar-link">安装</a></li><li><a href="/guide/" aria-current="page" class="sidebar-link">快速上手</a></li><li><a href="/guide/config.html" class="sidebar-link">配置项</a></li><li><a href="/guide/api.html" class="sidebar-link">api接口</a></li><li><a href="/guide/control.html" aria-current="page" class="active sidebar-link">组件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/control.html#控制条" class="sidebar-link">控制条</a></li><li class="sidebar-sub-header"><a href="/guide/control.html#例-更改最底部控制条的组件" class="sidebar-link">例：更改最底部控制条的组件:</a></li><li class="sidebar-sub-header"><a href="/guide/control.html#原子组件" class="sidebar-link">原子组件</a></li><li class="sidebar-sub-header"><a href="/guide/control.html#内置组件实例的获取-包括原子组件" class="sidebar-link">内置组件实例的获取（包括原子组件）</a></li><li class="sidebar-sub-header"><a href="/guide/control.html#自定义组件" class="sidebar-link">自定义组件</a></li><li class="sidebar-sub-header"><a href="/guide/control.html#更新组件" class="sidebar-link">更新组件</a></li></ul></li><li><a href="/guide/event.html" class="sidebar-link">事件系统</a></li><li><a href="/guide/danmaku.html" class="sidebar-link">弹幕</a></li><li><a href="/guide/mse.html" class="sidebar-link">流媒体接入</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="组件"><a href="#组件" class="header-anchor">#</a> 组件</h1> <h2 id="控制条"><a href="#控制条" class="header-anchor">#</a> 控制条</h2> <p>NiPlayer播放器中控制条从上至下分为三类:
+<img src="/NiPlayerDocs//assets/control.png" alt="">
+分别为<code>TopBar,MediumBar,BottomBar</code>，用户可以随意更改控制条内的组件,比如某些组件的挂载和卸载，也可以注册自己的组件.<strong>因此就算播放器的默认样式用户不满意，完全可以自己定制样式</strong></p> <h2 id="例-更改最底部控制条的组件"><a href="#例-更改最底部控制条的组件" class="header-anchor">#</a> 例：更改最底部控制条的组件:</h2> <p><strong>例如用户觉得底部右侧的组件过于冗余，只想保存其中的全屏和设置组件，那么可以这么做:</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> Player <span class="token keyword">from</span> <span class="token string">&quot;niplayer&quot;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> FullScreen<span class="token punctuation">,</span>FullPage<span class="token punctuation">,</span>SubSetting <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;niplayer&quot;</span> <span class="token comment">// 引入播放器的内置组件</span>
+<span class="token keyword">let</span> player <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Player</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">&quot;https://novaex.cc/OnePiece.mp4&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">container</span><span class="token operator">:</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;video&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">rightBottomBarControllers</span><span class="token operator">:</span> <span class="token punctuation">[</span>SubSetting<span class="token punctuation">,</span>FullPage<span class="token punctuation">,</span>FullScreen<span class="token punctuation">]</span> <span class="token comment">// rightBottomBarControllers --&gt; 用于控制右下侧的控制条</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+player<span class="token punctuation">.</span><span class="token function">attachSource</span><span class="token punctuation">(</span><span class="token string">&quot;https://novaex.cc/OnePiece.mp4&quot;</span><span class="token punctuation">)</span>
+</code></pre></div><p><img src="/NiPlayerDocs//assets/control-example.png" alt=""></p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>其余的部分同理</p></div> <h2 id="原子组件"><a href="#原子组件" class="header-anchor">#</a> 原子组件</h2> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>原子组件指的是内部不在包含其他组件，是播放器中组件的最小单位，也是最容易进行更换和定制的组件；NiPlayer中一共内置9种内置组件：</p></div> <table><thead><tr><th>组件名</th> <th>说明</th></tr></thead> <tbody><tr><td>FullScreen</td> <td>全屏组件</td></tr> <tr><td>PageScreen</td> <td>页面全屏</td></tr> <tr><td>PicInPic</td> <td>画中画</td></tr> <tr><td>ScreenShot</td> <td>截图</td></tr> <tr><td>VideoShot</td> <td>视频录制</td></tr> <tr><td>SubSetting</td> <td>设置</td></tr> <tr><td>Volume</td> <td>音量</td></tr> <tr><td>Playbutton</td> <td>播放按钮</td></tr> <tr><td>Toast</td> <td>弹窗组件</td></tr></tbody></table> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> FullScreen<span class="token punctuation">,</span>FullPage<span class="token punctuation">,</span>SubSetting<span class="token punctuation">,</span>PlayButton<span class="token punctuation">,</span>PicInPic<span class="token punctuation">,</span>Volume<span class="token punctuation">,</span>ScreenShot<span class="token punctuation">,</span>VideoShot<span class="token punctuation">,</span> <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;niplayer&quot;</span>
+<span class="token comment">// 默认所有内置组件都会挂载到视图上</span>
+</code></pre></div><h2 id="内置组件实例的获取-包括原子组件"><a href="#内置组件实例的获取-包括原子组件" class="header-anchor">#</a> 内置组件实例的获取（包括原子组件）</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 所有实例化的组件都会保存在其中，包括用户自定义的组件</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span><span class="token constant">ONCE_COMPONENT_STORE</span><span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;niplayer&quot;</span>
+<span class="token comment">// 传入组件的id，通常内置组件的id就是其构造函数的名字</span>
+<span class="token keyword">let</span> instance <span class="token operator">=</span> <span class="token constant">ONCE_COMPONENT_STORE</span><span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">&quot;PicInPic&quot;</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>instance<span class="token punctuation">)</span>
+</code></pre></div><h2 id="自定义组件"><a href="#自定义组件" class="header-anchor">#</a> 自定义组件</h2> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>除了内置组件外，用户还可以自定义组件然后挂载到相关的控制条上;</p></div> <p><strong>组件的签名项和其继承的基类如下：</strong></p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token comment">// 组件构造函数需要实现的接口</span>
+<span class="token keyword">interface</span> <span class="token class-name">ComponentItem</span> <span class="token punctuation">{</span>
+  id<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span> <span class="token comment">// 组件的标识符</span>
+  el<span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span> <span class="token comment">// 组件对应的DOM元素</span>
+  container<span class="token operator">?</span><span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span> <span class="token comment">// 容器 ，可选</span>
+  props<span class="token operator">?</span><span class="token operator">:</span> DOMProps<span class="token punctuation">;</span> <span class="token comment">// 组件的属性，包括（className,id,style），最终会挂载到DOM元素上</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 组件构造函数需要继承的基类</span>
+<span class="token keyword">class</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  el<span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span> <span class="token comment">//el代表着该组件对应的整个HTML元素</span>
+  container<span class="token operator">:</span> HTMLElement<span class="token punctuation">;</span> <span class="token comment">// 组件的容器</span>
+  <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">// 初始化函数</span>
+  <span class="token function">initEvent</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">//初始化事件</span>
+  <span class="token function">initPCEvent</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">//初始化PC端事件</span>
+  <span class="token function">initMobileEvent</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">// 初始化移动端事件</span>
+  <span class="token function">initTemplate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">//初始化总的模板（也就是该组件的HTML结构）</span>
+  <span class="token function">initPCTemplate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">//初始化PC端模板</span>
+  <span class="token function">initMobileTemplate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">//初始化移动端模板</span>
+  <span class="token function">initComponent</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">//初始化内部的其他组件</span>
+  <span class="token function">resetEvent</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">//重置事件</span>
+  <span class="token function">dispose</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment">//销毁组件</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token operator">...</span><span class="token punctuation">.</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>因此如果在JS中需要自定义组件的话</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 此处为JS写法</span>
+<span class="token keyword">class</span> <span class="token class-name">MyComponent</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span><span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">player<span class="token punctuation">,</span>container</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// player为构造器实例，container为容器</span>
+        <span class="token comment">// 此处的第二个参数代表着组件的标签名，第三个参数中可以写我们的样式</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span>container<span class="token punctuation">,</span><span class="token string">&quot;div&quot;</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+            <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token string">&quot;MyComponentID&quot;</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">className</span><span class="token operator">:</span> <span class="token string">&quot;MyComponentClassName&quot;</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">style</span><span class="token operator">:</span><span class="token punctuation">{</span>
+                <span class="token literal-property property">color</span><span class="token operator">:</span> <span class="token string">&quot;red&quot;</span><span class="token punctuation">;</span>
+                <span class="token literal-property property">fontSize</span><span class="token operator">:</span> <span class="token string">&quot;14px&quot;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>id <span class="token operator">=</span> <span class="token string">&quot;MyComponent&quot;</span> <span class="token comment">//组件必须要存在id！！！</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 覆写Component中的init函数，也可以不覆写保持其默认行为</span>
+    <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">initEvent</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">initEvent</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 此处可以写我们自己的事件</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>player<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>el<span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&quot;click&quot;</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>使用TypeScript你会获得更好的体验:</strong></p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">MyComponent</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token keyword">implements</span> <span class="token class-name">ComponentItem</span> <span class="token punctuation">{</span>
+    <span class="token keyword">readonly</span> id <span class="token operator">=</span> <span class="token string">&quot;MyComponent&quot;</span><span class="token punctuation">;</span>
+    player<span class="token operator">:</span> Player<span class="token punctuation">;</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span>player<span class="token operator">:</span>Player<span class="token punctuation">,</span>container<span class="token operator">:</span>HTMLElement<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span>container<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>player <span class="token operator">=</span> player<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">initTemplate</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">initEvent</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">initTemplate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 初始化你的dom节点</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">initEvent</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 初始化事件</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>最后在定义完成组件构造函数之后便可以挂载上去了：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> player <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Player</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">&quot;https://novaex.cc/OnePiece.mp4&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">container</span><span class="token operator">:</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;video&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">rightBottomBarControllers</span><span class="token operator">:</span> <span class="token punctuation">[</span>MyComponent<span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>特别的，除了通过继承Component来实现自己的组件（这只是编写一个最基本组件的方法）；如果用户想要实现一个类似于最底层的原子组件的模板并且具有类似的通用行为的话，例如内置全屏组件，鼠标移入会在上面显示tips，并且点击触发事件。那么你可以这么code你的自定义组件</p></div> <p>依然JS写法，TS同理</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">YourComponent</span> <span class="token keyword">extends</span> <span class="token class-name">Options</span> <span class="token punctuation">{</span>
+    <span class="token function">constructor</span><span class="token punctuation">(</span>
+    player<span class="token punctuation">,</span> <span class="token comment">//播放器实例</span>
+    container<span class="token punctuation">,</span> <span class="token comment">// 组件容器</span>
+    desc<span class="token punctuation">,</span> <span class="token comment">//组件DOM节点的标签名</span>
+    props<span class="token punctuation">,</span> <span class="token comment">//DOM节点的属性，包括style,id,class</span>
+  <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>player<span class="token punctuation">,</span> container<span class="token punctuation">,</span> width<span class="token punctuation">,</span> height<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//width,height为隐藏部分的宽高，也就是你鼠标移入是显示的部分</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+    <span class="token comment">// 写入自己想要的组件icon</span>
+  <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>icon <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">&quot;svg&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>iconBox<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>icon<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 隐藏部分div的内容</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>hideBox<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> <span class="token string">&quot;&lt;h1&gt;隐藏内容&lt;/h1&gt;&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="更新组件"><a href="#更新组件" class="header-anchor">#</a> 更新组件</h2> <p>用户可以改变内置组件或者自己已经挂载上去的自定义组件。</p> <h3 id="_1-改变组件的icon图标"><a href="#_1-改变组件的icon图标" class="header-anchor">#</a> 1. 改变组件的ICON图标</h3> <p>对于那些继承<code>Options</code>的内置组件或者自定义组件，提供了方便的替换ICON图标的接口;</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> <span class="token punctuation">{</span><span class="token constant">ONCE_COMPONENT_STORE</span><span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;niplayer&quot;</span>
+<span class="token keyword">let</span> instance <span class="token operator">=</span> <span class="token constant">ONCE_COMPONENT_STORE</span><span class="token punctuation">(</span>yourname<span class="token punctuation">)</span><span class="token punctuation">;</span>
+instance<span class="token punctuation">.</span><span class="token function">replaceIcon</span><span class="token punctuation">(</span>svg<span class="token punctuation">)</span> <span class="token comment">// 替换图标</span>
+</code></pre></div><h3 id="_2-修改组件的样式"><a href="#_2-修改组件的样式" class="header-anchor">#</a> 2. 修改组件的样式</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> player <span class="token keyword">from</span> <span class="token string">&quot;niplayer&quot;</span>
+<span class="token comment">// 1.改变样式</span>
+player<span class="token punctuation">.</span><span class="token function">updateComponent</span><span class="token punctuation">(</span>id<span class="token punctuation">,</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">props</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">style</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">color</span><span class="token operator">:</span> <span class="token string">&quot;red&quot;</span><span class="token punctuation">;</span>
+            <span class="token literal-property property">borderRadius</span><span class="token operator">:</span> <span class="token string">&quot;5px&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token string">&quot;新增ID&quot;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">className</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;1&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;2&quot;</span><span class="token punctuation">]</span>
+        
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token comment">// 2.替换整个dom节点</span>
+player<span class="token punctuation">.</span><span class="token function">updateComponent</span><span class="token punctuation">(</span>id<span class="token punctuation">,</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">el</span><span class="token operator">:</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">&quot;id&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">options</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 两种替换方式</span>
+        <span class="token literal-property property">replaceElType</span><span class="token operator">:</span> <span class="token string">&quot;replaceOuterHTMLOfComponent&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;replaceInnerHTMLOfComponent&quot;</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/api.html" class="prev">
+        api接口
+      </a></span> <span class="next"><a href="/guide/event.html">
+        事件系统
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.972e7c2f.js" defer></script><script src="/assets/js/2.0f6b4283.js" defer></script><script src="/assets/js/16.18e2fc4d.js" defer></script>
+  </body>
+</html>
